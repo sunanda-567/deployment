@@ -8,7 +8,6 @@ app = Flask(__name__)
 
 #Define visitor function to check how many visitor are there
 def visitors():
-
     counter_read_file = open("count.txt", "r")
     visitors_count = int(counter_read_file.read())
     counter_read_file.close()
