@@ -25,8 +25,7 @@ def visitors():
 @app.route('/', methods = ['POST'])
 
 
-def weather_stats(): n
-    # Load current count
+def weather_stats(): 
     counter_read_file = open("count.txt", "r")
     visitors_count = int(counter_read_file.read())
     counter_read_file.close()
